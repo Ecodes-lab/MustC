@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		97A5DDFA210667BD002FB912 /* AddMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A5DDF9210667BD002FB912 /* AddMovieViewController.swift */; };
 		99327EF52A0EDF83006202B1 /* NSPersistentContainer+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99327EF42A0EDF83006202B1 /* NSPersistentContainer+Ext.swift */; };
 		99327EF72A0EE8E5006202B1 /* PersistentContainerRequiring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99327EF62A0EE8E5006202B1 /* PersistentContainerRequiring.swift */; };
+		99E202CB2A113B700056F5EB /* MustC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99E202C92A113B700056F5EB /* MustC.xcdatamodeld */; };
+		99E202D12A126FF10056F5EB /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E202D02A126FF10056F5EB /* NSManagedObjectContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		97A5DDF9210667BD002FB912 /* AddMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewController.swift; sourceTree = "<group>"; };
 		99327EF42A0EDF83006202B1 /* NSPersistentContainer+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPersistentContainer+Ext.swift"; sourceTree = "<group>"; };
 		99327EF62A0EE8E5006202B1 /* PersistentContainerRequiring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainerRequiring.swift; sourceTree = "<group>"; };
+		99E202CA2A113B700056F5EB /* MustC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MustC.xcdatamodel; sourceTree = "<group>"; };
+		99E202D02A126FF10056F5EB /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 				97A5DDE421066675002FB912 /* Assets.xcassets */,
 				97A5DDE621066675002FB912 /* LaunchScreen.storyboard */,
 				97A5DDE921066675002FB912 /* Info.plist */,
+				99E202C92A113B700056F5EB /* MustC.xcdatamodeld */,
 			);
 			path = MustC;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				99327EF42A0EDF83006202B1 /* NSPersistentContainer+Ext.swift */,
+				99E202D02A126FF10056F5EB /* NSManagedObjectContext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -135,8 +141,9 @@
 		97A5DDD221066673002FB912 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = DonnyWals;
 				TargetAttributes = {
 					97A5DDD921066674002FB912 = {
@@ -182,9 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				97A5DDE021066674002FB912 /* FamilyMembersViewController.swift in Sources */,
+				99E202D12A126FF10056F5EB /* NSManagedObjectContext.swift in Sources */,
 				97A5DDF621066782002FB912 /* MoviesViewController.swift in Sources */,
 				97A5DDDE21066674002FB912 /* AppDelegate.swift in Sources */,
 				99327EF52A0EDF83006202B1 /* NSPersistentContainer+Ext.swift in Sources */,
+				99E202CB2A113B700056F5EB /* MustC.xcdatamodeld in Sources */,
 				99327EF72A0EE8E5006202B1 /* PersistentContainerRequiring.swift in Sources */,
 				97A5DDFA210667BD002FB912 /* AddMovieViewController.swift in Sources */,
 				97A5DDF42106670D002FB912 /* AddFamilyMemberDelegate.swift in Sources */,
@@ -338,13 +347,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4WZFDA97N8;
+				DEVELOPMENT_TEAM = VNY43MD7YT;
 				INFOPLIST_FILE = MustC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.donnywals.MustC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecodes.MustC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -356,13 +365,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4WZFDA97N8;
+				DEVELOPMENT_TEAM = VNY43MD7YT;
 				INFOPLIST_FILE = MustC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.donnywals.MustC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecodes.MustC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,6 +400,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		99E202C92A113B700056F5EB /* MustC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				99E202CA2A113B700056F5EB /* MustC.xcdatamodel */,
+			);
+			currentVersion = 99E202CA2A113B700056F5EB /* MustC.xcdatamodel */;
+			path = MustC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 97A5DDD221066673002FB912 /* Project object */;
 }
